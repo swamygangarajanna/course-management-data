@@ -1,4 +1,4 @@
-package com.encoursa.data.coursemanagementdata.models;
+package com.encoursa.data.coursemanagementdata.topic.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -49,4 +49,5 @@ public class Topic {
     public void setDescription(String description) {
         this.description = description;
     }
+
 }

@@ -1,17 +1,15 @@
-package com.encoursa.data.coursemanagementdata.controller;
+package com.encoursa.data.coursemanagementdata.topic.controller;
 
 
-import com.encoursa.data.coursemanagementdata.models.Topic;
-import com.encoursa.data.coursemanagementdata.servrice.TopicDataService;
+import com.encoursa.data.coursemanagementdata.topic.models.Topic;
+import com.encoursa.data.coursemanagementdata.topic.servrice.TopicDataService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/topicdata")
+@RequestMapping
 public class TopicDataController {
 
     @Autowired

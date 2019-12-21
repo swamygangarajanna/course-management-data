@@ -1,8 +1,8 @@
-package com.encoursa.data.coursemanagementdata.servrice;
+package com.encoursa.data.coursemanagementdata.topic.servrice;
 
 
-import com.encoursa.data.coursemanagementdata.models.Topic;
-import com.encoursa.data.coursemanagementdata.repository.TopicRepository;
+import com.encoursa.data.coursemanagementdata.topic.models.Topic;
+import com.encoursa.data.coursemanagementdata.topic.repository.TopicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
