@@ -1,0 +1,30 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    url: jdbc:postgresql://host:5432/devalert
+    username: <userName>
+    password: <password>
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 16
+      minimum-idle: 16
+  jpa:
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        default_schema: <schema_name>
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        cache:
+          use_second_level_cache: true
+          region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+          queries: true
+          use_query_cache: true
+    hibernate:
+      ddl-auto: none
+    show-sql: true
